@@ -1,0 +1,17 @@
+BELLA VITTA — COMO USAR
+
+Arquivos:
+- index.html: página inicial
+- produtos.html: catálogo com pesquisa, categorias e ordenação
+- destaques.html: produtos destacados e ofertas
+- style.css: visual compartilhado verde e creme
+- script.js: dados, filtros, carrinho e WhatsApp
+- IMAGENS/: coloque aqui as fotos já usadas no seu projeto
+
+IMPORTANTE:
+1. Mantenha os cinco arquivos HTML/CSS/JS na mesma pasta.
+2. Copie suas imagens existentes para a pasta IMAGENS.
+3. Os nomes de arquivo usados no script.js precisam corresponder exatamente aos nomes das imagens (inclusive extensão e maiúsculas/minúsculas). Se uma foto não tiver nome igual, edite o campo imagem do produto.
+4. No início de script.js, substitua 5500000000000 pelo número da loja no formato 55 + DDD + telefone.
+5. Os preços, estoques e ofertas são demonstrativos: ajuste conforme a loja.
+6. O carrinho fica salvo no navegador com localStorage e é compartilhado entre as três páginas do mesmo site.

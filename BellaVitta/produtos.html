@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#244b37"><title>Produtos | Bella Vitta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+  <div class="topline">Frescor selecionado todos os dias <span>•</span> Qualidade que você sente</div>
+  <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">BV</span><span><strong>Bella Vitta</strong><small>HORTIFRUTI</small></span></a><button class="menu-toggle" id="menuMobile" aria-label="Abrir menu" aria-expanded="false">☰</button><nav class="main-nav" id="navegacao"><a href="index.html">Início</a><a class="active" href="produtos.html">Produtos</a><a href="destaques.html">Destaques e ofertas</a></nav><button class="cart-button" id="abrirCarrinho"><span>♡</span> Carrinho <b id="contadorCarrinho">0</b></button></header>
+  <main>
+    <section class="page-banner"><div class="container"><span class="eyebrow">CATÁLOGO BELLA VITTA</span><h1>Encontre seus <em>favoritos.</em></h1><p>Produtos frescos para acompanhar você em todos os momentos.</p><div class="breadcrumbs"><a href="index.html">Início</a><span>/</span><span>Produtos</span></div></div></section>
+    <section class="section container catalog-section">
+      <div class="catalog-toolbar"><div><span class="eyebrow">NOSSO CATÁLOGO</span><h2>Produtos <em>fresquinhos</em></h2></div><span class="results-count" id="contadorProdutos">Carregando produtos...</span></div>
+      <div class="filters"><label class="search-box"><span>⌕</span><input type="search" id="campoBusca" placeholder="Buscar produto..." aria-label="Buscar produto"></label><label class="select-wrap"><span class="sr-only">Categoria</span><select id="filtroCategoria"><option value="todos">Todas as categorias</option><option value="frutas">Frutas</option><option value="verduras">Verduras</option><option value="legumes">Legumes</option><option value="temperos">Temperos</option></select></label><label class="select-wrap"><span class="sr-only">Ordenar por</span><select id="ordenarProdutos"><option value="nome">Ordenar: nome</option><option value="menor-preco">Menor preço</option><option value="maior-preco">Maior preço</option></select></label></div>
+      <div class="product-grid" id="gradeProdutos"></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-main"><a class="brand brand-footer" href="index.html"><span class="brand-mark">BV</span><span><strong>Bella Vitta</strong><small>HORTIFRUTI</small></span></a><p>Frescor, cuidado e qualidade<br>em cada escolha.</p><div class="footer-links"><a href="index.html">Início</a><a href="destaques.html">Destaques e ofertas</a><button id="whatsappOfertas" class="footer-link-button">Fale conosco</button></div></div><div class="container footer-bottom">© <span id="anoAtual"></span> Bella Vitta. Todos os direitos reservados.</div></footer>
+  <div class="cart-backdrop" id="fundoCarrinho"></div><aside class="cart-panel" id="painelCarrinho" aria-hidden="true" aria-label="Carrinho de compras"><div class="cart-header"><div><span class="eyebrow">SUA SELEÇÃO</span><h2>Meu carrinho</h2></div><button class="icon-button" id="fecharCarrinho" aria-label="Fechar carrinho">×</button></div><div class="cart-items" id="itensCarrinho"></div><div class="cart-footer"><div class="cart-total"><span>Total estimado</span><strong id="totalCarrinho">R$ 0,00</strong></div><p class="cart-disclaimer">Valores e disponibilidade serão confirmados no atendimento.</p><button class="button button-dark button-full" id="finalizarPedido">Continuar pelo WhatsApp ↗</button><button class="button button-outline button-full" id="continuarComprando">Continuar comprando</button></div></aside><div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body></html>
